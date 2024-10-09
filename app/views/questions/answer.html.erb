@@ -1,6 +1,16 @@
-<h1>answer</h1>
+  <div class="container mt-5">
+    <!-- Título centrado -->
+    <h1 class="text-center">Respuesta</h1>
 
-<p><strong>Question:</strong> <%= @question %></p>
-<p><strong>Answer:</strong> <%= @answer %></p>
+    <!-- Pregunta del usuario -->
+    <p><strong>Pregunta:</strong> <%= @question %></p>
 
-<%= link_to 'ask', ask_path %>
+    <!-- Respuesta del coach -->
+    <div class="response-box">
+      <p><strong>Respuesta:</strong> <%= @answer %></p>
+    </div>
+
+    <div class="text-center mt-3">
+      <a href="/ask" class="btn btn-primary">ask</a>
+    </div>
+  </div>
